@@ -1,7 +1,10 @@
+(function() {
 "use strict";
 
 const Alea = require('alea');
 const FastSimplexNoise = require('fast-simplex-noise');
+
+const floor = Math.floor;
 
 const BUCKETS = 100;
 const SAMPLE_SCALE = 1e6;
@@ -29,7 +32,7 @@ Histogram.prototype = {
     return ((v - this._min) / (this._max - this._min)) * this._buckets.length;
   },
   getBucketIndex: function(v) {
-    return Math.floor(this.getBucket(v));
+    return floor(this.getBucket(v));
   },
   getBucketResidual: function(v) {
     return this.getBucket(v) % 1;
@@ -111,3 +114,5 @@ FastUniformNoise.prototype = {
 };
 
 module.exports = FastUniformNoise;
+
+})();
