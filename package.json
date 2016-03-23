@@ -1,0 +1,28 @@
+{
+  "name": "fast-uniform-noise",
+  "version": "0.0.1",
+  "description": "Simplex noise scaled to a uniform distribution",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modulesio/fast-uniform-noise.git"
+  },
+  "keywords": [
+    "simplex",
+    "uniform",
+    "noise"
+  ],
+  "author": "a@modules.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/modulesio/fast-uniform-noise/issues"
+  },
+  "homepage": "https://github.com/modulesio/fast-uniform-noise#readme",
+  "dependencies": {
+    "alea": "0.0.9",
+    "fast-simplex-noise": "^2.1.1"
+  }
+}
