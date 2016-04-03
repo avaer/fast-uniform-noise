@@ -1,6 +1,6 @@
 {
   "name": "fast-uniform-noise",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simplex noise scaled to a uniform distribution",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/modulesio/fast-uniform-noise#readme",
   "dependencies": {
     "alea": "0.0.9",
-    "fast-simplex-noise": "^2.1.1"
+    "fast-simplex-noise": "^2.1.1",
+    "mkdirp": "^0.5.1"
   }
 }
