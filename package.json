@@ -1,6 +1,6 @@
 {
   "name": "fast-uniform-noise",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simplex noise scaled to a uniform distribution",
   "main": "index.js",
   "scripts": {
