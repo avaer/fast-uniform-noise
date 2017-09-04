@@ -18,20 +18,18 @@ Histogram.prototype = {
     return v * this._buckets.length;
   },
   getBucketIndex: function(v) {
-    return Math.floor(this.getBucket(v));
+    return Math.min(Math.max(Math.floor(this.getBucket(v)), 0), this._buckets.length - 1);
   },
   getBucketResidual: function(v) {
     return this.getBucket(v) % 1;
   },
   add: function(v) {
-    const bucketIndex = this.getBucketIndex(v);
-    this._buckets[bucketIndex]++;
+    this._buckets[this.getBucketIndex(v)]++;
   },
   total: function() {
     let result = 0;
     for (let i = 0, l = this._buckets.length; i < l; i++) {
-      const bucketValue = this._buckets[i];
-      result += bucketValue;
+      result += this._buckets[i];
     }
     return result;
   },
